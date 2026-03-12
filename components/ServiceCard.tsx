@@ -26,8 +26,8 @@ export function ServiceCard({ title, description, icon }: Service) {
   useEffect(() => setMounted(true), []);
 
   return (
-    <div className="group relative rounded-lg border border-border bg-background-secondary p-8 transition-all duration-200 hover:border-accent/40 hover:bg-background-secondary/80">
-      <div className="absolute inset-y-0 left-0 w-[2px] origin-bottom scale-y-0 bg-accent transition-transform duration-300 group-hover:scale-y-100" />
+    <div className="group relative rounded-lg border border-border bg-background-secondary p-8 transition-all duration-200 hover:border-accent/40 hover:brightness-110">
+      <div className="absolute inset-y-0 left-0 w-[2px] origin-bottom scale-y-0 rounded-full bg-accent transition-transform duration-300 group-hover:scale-y-100" />
       <div className="mb-5 inline-flex rounded-md bg-accent/10 p-3 text-accent transition-colors duration-200 group-hover:bg-accent/20">
         {mounted ? <Icon className="size-5" /> : <span className="size-5 block" />}
       </div>

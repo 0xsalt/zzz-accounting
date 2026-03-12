@@ -9,7 +9,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="border-b border-border/60 backdrop-blur-sm">
+    <header className="border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-8 py-6">
         <Link href="/" className="group flex items-center gap-3">
           <div className="flex size-8 items-center justify-center rounded border border-accent/30 transition-colors duration-200 group-hover:border-accent/60">
@@ -25,10 +25,11 @@ export function Header() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium tracking-wide uppercase transition-colors duration-200",
+                "relative text-sm font-medium tracking-wide uppercase transition-colors duration-200",
+                "after:absolute after:inset-x-0 after:-bottom-[1.625rem] after:h-px after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-200",
                 pathname === link.href
-                  ? "text-accent"
-                  : "text-foreground-muted hover:text-foreground"
+                  ? "text-accent after:scale-x-100"
+                  : "text-foreground-muted hover:text-foreground hover:after:scale-x-100"
               )}
             >
               {link.label}
