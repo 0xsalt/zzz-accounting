@@ -22,7 +22,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-[1200px] px-8 py-20">
         <div className="accent-rule animate-fade-up mb-8" />
         <p className="stamp animate-fade-up animate-delay-100 mb-4 text-accent">
-          Est. {FIRM.founded} — Plainfield, IL
+          Est. {FIRM.founded} // Plainfield, IL
         </p>
         <h1 className="animate-fade-up animate-delay-200 mb-6 text-6xl font-extralight tracking-tight text-foreground lg:text-8xl">
           {FIRM.name}

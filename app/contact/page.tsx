@@ -4,7 +4,7 @@ import { FIRM } from "@/lib/data";
 import { MapPin, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact — ZZZ Accounting",
+  title: "Contact | ZZZ Accounting",
   description: "Get in touch with ZZZ Accounting.",
 };
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
           </div>
           <div className="relative rounded-lg border border-accent/20 bg-background-secondary p-6">
             <p className="stamp mb-3 text-foreground-muted/30">
-              File Note — Personal
+              File Note // Personal
             </p>
             <p className="text-sm italic leading-relaxed text-foreground-muted">
               &ldquo;I have a gift with numbers. I see things others

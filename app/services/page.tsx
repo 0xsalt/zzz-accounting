@@ -3,7 +3,7 @@ import { ServiceCard } from "@/components/ServiceCard";
 import { SERVICES } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Services — ZZZ Accounting",
+  title: "Services | ZZZ Accounting",
   description: "Forensic accounting, tax strategy, asset protection, and financial consulting.",
 };
 
@@ -19,7 +19,7 @@ export default function ServicesPage() {
       </h1>
       <p className="mb-16 max-w-[600px] text-base leading-relaxed text-foreground-muted">
         Every engagement begins with understanding. We do not offer cookie-cutter
-        solutions — each client receives a methodology tailored to their specific
+        solutions. Each client receives a methodology tailored to their specific
         situation.
       </p>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
