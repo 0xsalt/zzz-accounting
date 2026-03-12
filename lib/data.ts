@@ -13,7 +13,7 @@ export const FIRM = {
   founded: "1997",
   // Easter egg: The Accountant character's methods
   philosophy:
-    "Our methodology is unconventional. Where others see complexity, we see patterns. Where others see risk, we see structure waiting to be revealed. Every number tells a story — our job is to ensure that story has the ending you need.",
+    "Our methodology is unconventional. Where others see complexity, we see patterns. Where others see risk, we see structure waiting to be revealed. Every number tells a story. Our job is to ensure that story has the ending you need.",
   history:
     "Founded in 1997, ZZZ Accounting began as a boutique firm serving clients whose financial situations demanded more than standard accounting practice could offer. Over two decades, we have built a reputation on two pillars: precision that borders on obsessive, and discretion that is absolute. Our clients come to us not because they want an accountant. They come because they need someone who sees what others miss.",
   // Easter egg: Christian Wolff's address from the film
@@ -45,13 +45,13 @@ export const SERVICES: Service[] = [
   {
     title: "Tax Strategy",
     description:
-      "Comprehensive tax planning that identifies every legitimate advantage available to you. We operate within the law — we simply know it better than most.",
+      "Comprehensive tax planning that identifies every legitimate advantage available to you. We operate within the law. We simply know it better than most.",
     icon: "Calculator",
   },
   {
     title: "Asset Protection",
     description:
-      "Structuring and safeguarding assets through legal frameworks that ensure your wealth remains yours. Complexity is not a barrier — it is a tool.",
+      "Structuring and safeguarding assets through legal frameworks that ensure your wealth remains yours. Complexity is not a barrier. It is a tool.",
     icon: "Shield",
   },
   {

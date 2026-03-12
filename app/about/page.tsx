@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FIRM } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About — ZZZ Accounting",
+  title: "About | ZZZ Accounting",
   description: "Our philosophy, history, and approach to accounting.",
 };
 
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </h3>
             <p className="text-sm leading-relaxed text-foreground-muted">
               Every decimal matters. Every transaction is traced. We do not
-              estimate — we verify. Our work product is exact, or it does not
+              estimate. We verify. Our work product is exact, or it does not
               leave our office.
             </p>
           </div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
       <div className="mt-20 border-t border-border pt-16">
         <div className="mx-auto max-w-[640px] text-center">
           <p className="stamp mb-6 text-foreground-muted/40">
-            Case File Note — Ref: CW-1997
+            Case File Note // Ref: CW-1997
           </p>
           <p className="text-base italic leading-relaxed text-foreground-muted/70">
             &ldquo;The hardest thing about having a gift is not the gift itself,
