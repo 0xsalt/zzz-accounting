@@ -20,7 +20,7 @@ export function ContactForm() {
         <Input
           id="name"
           placeholder="Your name"
-          className="border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent"
+          className="h-11 border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent focus:ring-1 focus:ring-accent/30"
         />
       </div>
       <div className="space-y-2">
@@ -34,7 +34,7 @@ export function ContactForm() {
           id="email"
           type="email"
           placeholder="your@email.com"
-          className="border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent"
+          className="h-11 border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent focus:ring-1 focus:ring-accent/30"
         />
       </div>
       <div className="space-y-2">
@@ -48,7 +48,7 @@ export function ContactForm() {
           id="message"
           placeholder="How can we help?"
           rows={5}
-          className="border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent"
+          className="border-border bg-background-secondary text-foreground placeholder:text-foreground-muted/50 focus:border-accent focus:ring-1 focus:ring-accent/30"
         />
       </div>
       <Button
