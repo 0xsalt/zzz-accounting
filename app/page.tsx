@@ -8,10 +8,11 @@ export default function Home() {
       <Hero />
       <section className="border-t border-border bg-background-secondary">
         <div className="mx-auto max-w-[1200px] px-8 py-20">
-          <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-accent">
+          <div className="accent-rule mb-8" />
+          <p className="stamp mb-3 text-accent">
             What We Do
           </p>
-          <h2 className="mb-4 text-3xl font-light tracking-tight text-foreground">
+          <h2 className="mb-4 text-3xl font-extralight tracking-tight text-foreground">
             Our Expertise
           </h2>
           <p className="mb-12 max-w-[600px] text-base text-foreground-muted">

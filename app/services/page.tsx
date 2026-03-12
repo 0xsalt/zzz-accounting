@@ -9,11 +9,12 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="mx-auto max-w-[1200px] px-8 py-20">
-      <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-accent">
+    <div className="ledger-bg mx-auto max-w-[1200px] px-8 py-20">
+      <div className="accent-rule mb-8" />
+      <p className="stamp mb-3 text-accent">
         Services
       </p>
-      <h1 className="mb-4 text-4xl font-light tracking-tight text-foreground">
+      <h1 className="mb-4 text-4xl font-extralight tracking-tight text-foreground">
         What We Offer
       </h1>
       <p className="mb-16 max-w-[600px] text-base leading-relaxed text-foreground-muted">

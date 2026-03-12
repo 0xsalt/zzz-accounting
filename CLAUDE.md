@@ -58,6 +58,30 @@ git checkout NNN-feature-name
 
 **Key:** `--ff-only` fails if merge would create a merge commit. If it fails, rebase your feature branch first.
 
+## Deployment
+
+Deploy via the service-dashboard API. Requires `service-dashboard.yaml` in the project root (auto-scaffolded on first deploy if missing). The API handles ports, process management, registry, health checks, and TLS.
+
+**Dev deploy** (Bun native, replaces any running instance):
+```bash
+curl -s -X POST https://the-commons.taila8bee6.ts.net:8000/api/deploy \
+  -H "Content-Type: application/json" \
+  -d '{"project": "/home/isecadmin/local/projects/zzz-accounting", "mode": "dev"}' | jq .
+```
+
+**Prod deploy** (Docker, returns immediately — poll for completion):
+```bash
+curl -s -X POST https://the-commons.taila8bee6.ts.net:8000/api/deploy \
+  -H "Content-Type: application/json" \
+  -d '{"project": "/home/isecadmin/local/projects/zzz-accounting", "mode": "prod"}' | jq .
+# Poll: curl -s https://the-commons.taila8bee6.ts.net:8000/api/deploy/status/DEPLOY_ID | jq .
+```
+
+**Response:** `{"status": "running", "url": "https://..."}` on success, `{"status": "failed", "error": "..."}` on failure.
+**Idempotent:** Calling deploy on an already-running service kills and replaces it.
+**Verify:** `curl -sk -o /dev/null -w "%{http_code}" <url-from-response>` — expect 200.
+**Discover:** `curl -s https://the-commons.taila8bee6.ts.net:8000/api/deploy/help` — returns current instructions.
+
 ## Key Decisions
 
 - **Stack:** Next.js 15 + Bun + Tailwind v4 + shadcn/ui (default PAI web stack)

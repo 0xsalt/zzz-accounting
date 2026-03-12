@@ -10,11 +10,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-[1200px] px-8 py-20">
-      <p className="mb-3 text-sm font-medium uppercase tracking-[0.3em] text-accent">
+    <div className="ledger-bg mx-auto max-w-[1200px] px-8 py-20">
+      <div className="accent-rule mb-8" />
+      <p className="stamp mb-3 text-accent">
         Contact
       </p>
-      <h1 className="mb-4 text-4xl font-light tracking-tight text-foreground">
+      <h1 className="mb-4 text-4xl font-extralight tracking-tight text-foreground">
         Get in Touch
       </h1>
       <p className="mb-16 max-w-[600px] text-base leading-relaxed text-foreground-muted">
@@ -26,7 +27,7 @@ export default function ContactPage() {
         <ContactForm />
         <div className="space-y-10">
           <div>
-            <h2 className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-accent">
+            <h2 className="stamp mb-6 text-accent">
               Office
             </h2>
             <div className="space-y-4">
@@ -51,7 +52,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div>
-            <h2 className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-accent">
+            <h2 className="stamp mb-4 text-accent">
               Hours
             </h2>
             <div className="space-y-2 text-sm text-foreground-muted">
@@ -59,8 +60,11 @@ export default function ContactPage() {
               <p>Saturday – Sunday: Closed</p>
             </div>
           </div>
-          <div className="rounded-lg border border-border bg-background-secondary p-6">
-            <p className="text-xs italic leading-relaxed text-foreground-muted">
+          <div className="relative rounded-lg border border-accent/20 bg-background-secondary p-6">
+            <p className="stamp mb-3 text-foreground-muted/30">
+              File Note — Personal
+            </p>
+            <p className="text-sm italic leading-relaxed text-foreground-muted">
               &ldquo;I have a gift with numbers. I see things others
               don&rsquo;t.&rdquo;
             </p>
