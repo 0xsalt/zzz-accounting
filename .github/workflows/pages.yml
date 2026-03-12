@@ -23,6 +23,8 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run build
+        env:
+          NEXT_PUBLIC_FORMSPREE_ID: ${{ secrets.FORMSPREE_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

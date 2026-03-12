@@ -5,7 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const FORMSPREE_URL = "https://formspree.io/f/REDACTED";
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+const FORMSPREE_URL = FORMSPREE_ID
+  ? `https://formspree.io/f/${FORMSPREE_ID}`
+  : null;
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -14,6 +17,10 @@ export function ContactForm() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (!FORMSPREE_URL) {
+      setStatus("error");
+      return;
+    }
     setStatus("submitting");
 
     const form = e.currentTarget;
