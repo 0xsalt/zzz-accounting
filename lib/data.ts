@@ -27,6 +27,8 @@ export const FIRM = {
   email: "inquiries@zzzaccounting.com",
 };
 
+export type Firm = typeof FIRM;
+
 export interface Service {
   title: string;
   description: string;

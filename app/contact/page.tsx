@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
+import { ContactInfo } from "@/components/ContactInfo";
 import { FIRM } from "@/lib/data";
-import { MapPin, Phone, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Contact — ZZZ Accounting",
@@ -26,31 +26,7 @@ export default function ContactPage() {
       <div className="grid gap-20 lg:grid-cols-2">
         <ContactForm />
         <div className="space-y-10">
-          <div>
-            <h2 className="stamp mb-6 text-accent">
-              Office
-            </h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="mt-0.5 size-4 text-accent" />
-                <div className="text-sm text-foreground-muted">
-                  <p>{FIRM.address.street}</p>
-                  <p>
-                    {FIRM.address.city}, {FIRM.address.state}{" "}
-                    {FIRM.address.zip}
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="size-4 text-accent" />
-                <p className="text-sm text-foreground-muted">{FIRM.phone}</p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="size-4 text-accent" />
-                <p className="text-sm text-foreground-muted">{FIRM.email}</p>
-              </div>
-            </div>
-          </div>
+          <ContactInfo firm={FIRM} />
           <div>
             <h2 className="stamp mb-4 text-accent">
               Hours
