@@ -34,3 +34,5 @@ docs/internal/
 .private-journal/
 .claude/
 MEMORY/
+service-dashboard.yaml
+.specify/
