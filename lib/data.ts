@@ -76,5 +76,5 @@ export const SERVICES: Service[] = [
 export const FOOTER = {
   // Easter egg: reference to the nursery rhyme from the film
   tagline: "Solomon Grundy, born on a Monday.",
-  copyright: `© ${new Date().getFullYear()} ZZZ Accounting. All rights reserved.`,
+  copyright: "© 2026 ZZZ Accounting. All rights reserved.",
 };
