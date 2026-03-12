@@ -8,7 +8,7 @@
 
 > Professional accounting services for clients who value discretion, precision, and results.
 
-A demo website for a fictional accounting firm inspired by *The Accountant* (2016). Clean, professional exterior. Unconventional methods within.
+A demo website for a fictional accounting firm. Dark, professional aesthetic with subtle unconventional details.
 
 ## Quick Start
 

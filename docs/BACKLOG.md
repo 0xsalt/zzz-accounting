@@ -12,7 +12,7 @@
 
 ## BACKLOG
 
-- [>] #001 Research and apply movie-accurate color palette, visual motifs, and tile/card styles that align with The Accountant's cinematography — use Designer agent for color extraction and UI recommendations #design #polish
+- [>] #001 Research and apply refined color palette, visual motifs, and tile/card styles — use Designer agent for color extraction and UI recommendations #design #polish
 
 ## ROADMAP
 

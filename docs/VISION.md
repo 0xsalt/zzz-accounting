@@ -10,7 +10,7 @@ New default web stack (Next.js 15 + Tailwind v4 + shadcn/ui + Bun) needs a showc
 
 ## Success Headline
 
-"Slick themed site with great UI craft — wait, is this from a movie?"
+"Slick themed site with great UI craft — wait, is this place real?"
 
 ## Where Intelligence Lives
 
@@ -23,7 +23,7 @@ Developer peers and community members who appreciate both technical craft and cr
 ## Success Metrics (3 max)
 
 1. A viewer cannot immediately tell it's a demo — it reads as a real firm's site for at least 10 seconds
-2. Someone who has seen *The Accountant* catches the references and grins
+2. Someone catches the subtle Easter eggs and grins
 3. The typography, spacing, and micro-interactions feel intentional — zero "template energy"
 
 ## What This Is NOT
@@ -43,7 +43,7 @@ Developer peers and community members who appreciate both technical craft and cr
 
 ## The Gut Check
 
-Someone browses to the site. Clean corporate aesthetic. Professional services listed with precise, understated copy. Everything feels legitimate — the kind of firm that handles offshore accounts and doesn't advertise. Then they notice a detail. The address. A name. The tagline. They look closer. *"Wait... is this from The Accountant?"* That's when it lands.
+Someone browses to the site. Clean corporate aesthetic. Professional services listed with precise, understated copy. Everything feels legitimate — the kind of firm that handles offshore accounts and doesn't advertise. Then they notice a detail. The address. A name. The tagline. They look closer. *"Wait... is this place real?"* That's when the craft lands.
 
 ## Anti-Drift Criteria
 
